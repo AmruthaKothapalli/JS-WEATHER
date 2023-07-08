@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="../CSS/weather.css" />
+  </head>
+  <body>
+    <div id="search">
+      <h3>Weather App</h3>
+      <hr />
+      <input type="text" id="text" placeholder="Enter city" />
+      <div id="error"><p>Invalid input</p></div>
+
+      <hr />
+      <button id="btn">GET</button>
+    </div>
+    <div id="report">
+      <h3 style="border-bottom: 1px solid lavender; padding-bottom: 10px">
+        Weather Report
+      </h3>
+      <img
+        src="../images/clouds.png"
+        height="100px"
+        width="100px"
+        class="image"
+      />
+      <div id="temp">12°C</div>
+      <h3 id="city">Hyderabad</h3>
+      <br />
+      <div id="display">
+        <div id="hum">
+          <div>
+            <img src="../images/humidity.png" height="20px" width="20px" />
+          </div>
+          <div>
+            <p id="humidity">34%</p>
+            <p style="font-size: 12px">humidity</p>
+          </div>
+        </div>
+        <div id="wind">
+          <div>
+            <img src="../images/wind.png" height="20px" width="20px" />
+          </div>
+          <div>
+            <p id="windy">33 km/h</p>
+            <p style="font-size: 12px">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../JAVASCRIPT/weather.js"></script>
+  </body>
+</html>
